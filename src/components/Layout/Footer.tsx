@@ -12,10 +12,9 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: "Facebook", icon: Facebook, href: "https://facebook.com" },
-    { name: "Instagram", icon: Instagram, href: "https://instagram.com" },
-    { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com" },
-    { name: "WhatsApp", icon: MessageCircle, href: "https://wa.me/923191763257" },
+    { name: "Facebook", icon: Facebook, href: "https://facebook.com/arhamdigitalagency/" },
+    { name: "Instagram", icon: Instagram, href: "https://instagram.com/arhamdigitalagency" },
+    { name: "WhatsApp", icon: MessageCircle, href: "https://wa.me/92327643422" },
   ];
 
   return (
@@ -70,7 +69,7 @@ const Footer = () => {
             </h4>
             <div className="space-y-2 text-sm text-muted-foreground">
               <p>Email: arhamdigitalagency@gmail.com</p>
-              <p>Phone: +92 319 176 3257</p>
+              <p>Phone: +92 327 643 422</p>
               <p>Location: Pakistan</p>
             </div>
           </div>

@@ -78,21 +78,21 @@ const Home = () => {
         </div>
         
         <div className="relative z-10 text-center container-padding max-w-4xl">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 hero-glow animate-fade-in">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 hero-glow hero-animate">
             ARHAM DIGITAL AGENCY
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 hero-animate delay-1">
             Your trusted partner for premium digital tools & services.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center hero-animate delay-2">
             <Link to="/products">
-              <Button size="lg" className="btn-primary">
+              <Button size="lg" className="btn-primary btn-glow">
                 Explore Products
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="btn-ghost">
+              <Button size="lg" variant="outline" className="btn-ghost btn-glow">
                 Contact Us
               </Button>
             </Link>
@@ -114,7 +114,7 @@ const Home = () => {
             {featuredProducts.map((product, index) => (
               <Card key={product.id} className="card-hover animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardContent className="p-6">
-                  <div className="flex items-center justify-center mb-4">
+                  <div className="flex items-center justify-center mb-4 float-animation">
                     <img
                       src={product.image}
                       alt={product.name}
@@ -130,7 +130,7 @@ const Home = () => {
                     <Button
                       size="sm"
                       onClick={() => addItem(product)}
-                      className="btn-primary"
+                      className="btn-primary btn-glow"
                     >
                       Add to Cart
                     </Button>
@@ -197,7 +197,7 @@ const Home = () => {
             Join thousands of satisfied customers who trust us for their digital tool needs
           </p>
           <Link to="/products">
-            <Button size="lg" className="btn-primary">
+            <Button size="lg" className="btn-primary btn-glow">
               Explore All Products
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
