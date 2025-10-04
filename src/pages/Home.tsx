@@ -71,13 +71,16 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110"
+          style={{ 
+            backgroundImage: `url(${heroImage})`,
+            objectPosition: 'center 40%'
+          }}
         >
           <div className="absolute inset-0 bg-background/80" />
         </div>
         
-        <div className="relative z-10 text-center container-padding max-w-4xl">
+        <div className="relative z-10 text-center container-padding max-w-4xl -mt-20">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 hero-glow hero-animate">
             ARHAM DIGITAL AGENCY
           </h1>
@@ -101,7 +104,7 @@ const Home = () => {
       </section>
 
       {/* Featured Products */}
-      <section className="section-padding bg-card/50">
+      <section className="section-padding bg-card/50 pt-24">
         <div className="max-w-7xl mx-auto container-padding">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Products</h2>
