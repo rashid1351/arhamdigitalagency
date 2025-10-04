@@ -9,12 +9,16 @@ interface CartSidebarProps {
 }
 
 export const CartSidebar = ({ open, onClose }: CartSidebarProps) => {
-  const { items, total, updateQuantity, removeItem, generateWhatsAppMessage } = useCart();
+  const { items, total, updateQuantity, removeItem, clearCart, generateWhatsAppMessage } = useCart();
 
   const handleWhatsAppCheckout = () => {
     const message = generateWhatsAppMessage();
     const whatsappUrl = `https://wa.me/923276434422?text=${message}`;
     window.open(whatsappUrl, '_blank');
+  };
+
+  const handleClearCart = () => {
+    clearCart();
   };
 
   return (
@@ -74,7 +78,7 @@ export const CartSidebar = ({ open, onClose }: CartSidebarProps) => {
                 ))}
               </div>
               
-              <div className="border-t pt-4 space-y-4">
+              <div className="border-t pt-4 space-y-3">
                 <div className="flex justify-between items-center text-lg font-semibold">
                   <span>Total:</span>
                   <span>Rs. {total}</span>
@@ -85,6 +89,13 @@ export const CartSidebar = ({ open, onClose }: CartSidebarProps) => {
                 >
                   <MessageCircle className="w-4 h-4 mr-2" />
                   Buy Now via WhatsApp
+                </Button>
+                <Button
+                  onClick={handleClearCart}
+                  variant="outline"
+                  className="w-full"
+                >
+                  Clear Cart
                 </Button>
               </div>
             </>
