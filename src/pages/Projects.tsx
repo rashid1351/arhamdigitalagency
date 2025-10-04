@@ -6,6 +6,15 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import ecommercePlatform from "@/assets/projects/ecommerce-platform.jpg";
+import corporateWebsite from "@/assets/projects/corporate-website.jpg";
+import socialMediaCampaign from "@/assets/projects/social-media-campaign.jpg";
+import productDemoVideos from "@/assets/projects/product-demo-videos.jpg";
+import businessPortfolio from "@/assets/projects/business-portfolio.jpg";
+import youtubeChannelGrowth from "@/assets/projects/youtube-channel-growth.jpg";
+import restaurantWebsite from "@/assets/projects/restaurant-website.jpg";
+import brandIdentity from "@/assets/projects/brand-identity.jpg";
+import instagramMarketing from "@/assets/projects/instagram-marketing.jpg";
 
 interface Project {
   id: string;
@@ -25,7 +34,7 @@ const Projects = () => {
       id: "1",
       title: "E-commerce Platform",
       category: "Web Development",
-      image: "https://via.placeholder.com/600x400",
+      image: ecommercePlatform,
       challenge: "Client needed a modern online store with seamless checkout and inventory management.",
       solution: "Built a responsive e-commerce website using Shopify with custom design, integrated payment gateways, and automated inventory tracking.",
       results: "300% increase in online sales, 85% faster checkout process, and 95% customer satisfaction rate."
@@ -34,7 +43,7 @@ const Projects = () => {
       id: "2",
       title: "Corporate Website Redesign",
       category: "Web Design",
-      image: "https://via.placeholder.com/600x400",
+      image: corporateWebsite,
       challenge: "Outdated website with poor mobile experience and low conversion rates.",
       solution: "Redesigned with modern UI/UX principles, mobile-first approach, and optimized page speed using latest web technologies.",
       results: "65% increase in mobile traffic, 40% improvement in page load time, 50% higher conversion rate."
@@ -43,7 +52,7 @@ const Projects = () => {
       id: "3",
       title: "Social Media Campaign",
       category: "Marketing",
-      image: "https://via.placeholder.com/600x400",
+      image: socialMediaCampaign,
       challenge: "Brand needed to increase engagement and reach younger demographics on social platforms.",
       solution: "Developed targeted content strategy with influencer partnerships, daily posts, and interactive stories across Instagram, Facebook, and TikTok.",
       results: "200% growth in followers, 150% increase in engagement, reached 500K+ new audience members."
@@ -52,7 +61,7 @@ const Projects = () => {
       id: "4",
       title: "Product Demo Videos",
       category: "Video Editing",
-      image: "https://via.placeholder.com/600x400",
+      image: productDemoVideos,
       challenge: "Company struggled to showcase product features effectively to potential customers.",
       solution: "Created professional demo videos with motion graphics, voiceovers, and compelling storytelling using CapCut and professional editing tools.",
       results: "80% increase in product understanding, 45% higher click-through rates, 60% more qualified leads."
@@ -61,7 +70,7 @@ const Projects = () => {
       id: "5",
       title: "Business Portfolio Website",
       category: "Web Development",
-      image: "https://via.placeholder.com/600x400",
+      image: businessPortfolio,
       challenge: "Freelance professional needed an impressive online portfolio to attract premium clients.",
       solution: "Designed and developed a stunning portfolio website with custom animations, case studies showcase, and contact integration.",
       results: "90% increase in client inquiries, 3x higher project value, featured in design community platforms."
@@ -70,7 +79,7 @@ const Projects = () => {
       id: "6",
       title: "YouTube Channel Growth",
       category: "Marketing",
-      image: "https://via.placeholder.com/600x400",
+      image: youtubeChannelGrowth,
       challenge: "Content creator struggled with low views and subscribers despite quality content.",
       solution: "Implemented SEO optimization, thumbnail design strategy, posting schedule optimization, and targeted promotion campaigns.",
       results: "500% subscriber growth in 6 months, 300% increase in average views, achieved monetization requirements."
@@ -79,7 +88,7 @@ const Projects = () => {
       id: "7",
       title: "Restaurant Website & Ordering",
       category: "Web Development",
-      image: "https://via.placeholder.com/600x400",
+      image: restaurantWebsite,
       challenge: "Local restaurant needed online presence and ordering system during pandemic.",
       solution: "Built responsive website with online menu, ordering system, delivery tracking, and payment integration.",
       results: "70% of sales moved online, 35% reduction in order errors, 92% customer satisfaction with new system."
@@ -88,7 +97,7 @@ const Projects = () => {
       id: "8",
       title: "Brand Identity Design",
       category: "Web Design",
-      image: "https://via.placeholder.com/600x400",
+      image: brandIdentity,
       challenge: "Startup needed complete brand identity from logo to website design.",
       solution: "Created comprehensive brand guidelines including logo, color palette, typography, and designed matching website and marketing materials.",
       results: "100% brand recognition improvement, professional image established, 5x increase in investor interest."
@@ -97,7 +106,7 @@ const Projects = () => {
       id: "9",
       title: "Instagram Marketing Campaign",
       category: "Marketing",
-      image: "https://via.placeholder.com/600x400",
+      image: instagramMarketing,
       challenge: "Fashion brand struggled with low Instagram engagement and sales conversion.",
       solution: "Developed content calendar, influencer collaborations, story highlights, reels strategy, and shoppable posts.",
       results: "400% increase in Instagram sales, 250% growth in engaged followers, 10K+ monthly reach."
@@ -129,7 +138,7 @@ const Projects = () => {
               <div className="aspect-[3/2] overflow-hidden">
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={`${project.title} - ${project.category} mockup design`}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
@@ -158,7 +167,7 @@ const Projects = () => {
                 <div className="aspect-video overflow-hidden rounded-lg">
                   <img
                     src={selectedProject.image}
-                    alt={selectedProject.title}
+                    alt={`${selectedProject.title} - ${selectedProject.category} mockup design`}
                     className="w-full h-full object-cover"
                   />
                 </div>
