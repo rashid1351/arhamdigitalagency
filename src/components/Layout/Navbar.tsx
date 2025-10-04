@@ -63,14 +63,15 @@ const Navbar = () => {
             {/* Cart and Mobile menu button */}
             <div className="flex items-center space-x-4">
               <Button
-                variant="ghost"
-                size="sm"
+                variant="default"
+                size="default"
                 onClick={() => setIsCartOpen(true)}
-                className="relative"
+                className="relative bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 h-10"
               >
-                <ShoppingCart className="h-5 w-5" />
+                <ShoppingCart className="h-5 w-5 mr-2" />
+                <span className="font-medium">Cart</span>
                 {totalItems > 0 && (
-                  <span className="absolute -top-2 -right-2 bg-primary text-primary-foreground rounded-full text-xs w-5 h-5 flex items-center justify-center">
+                  <span className="ml-2 bg-background text-foreground rounded-full text-xs w-5 h-5 flex items-center justify-center font-semibold">
                     {totalItems}
                   </span>
                 )}

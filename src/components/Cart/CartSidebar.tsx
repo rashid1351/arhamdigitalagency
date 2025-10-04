@@ -1,4 +1,4 @@
-import { Minus, Plus, Trash2, MessageCircle } from "lucide-react";
+import { Minus, Plus, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { useCart } from "@/hooks/useCart";
@@ -11,10 +11,10 @@ interface CartSidebarProps {
 export const CartSidebar = ({ open, onClose }: CartSidebarProps) => {
   const { items, total, updateQuantity, removeItem, clearCart, generateWhatsAppMessage } = useCart();
 
-  const handleWhatsAppCheckout = () => {
-    const message = generateWhatsAppMessage();
-    const whatsappUrl = `https://wa.me/923276434422?text=${message}`;
-    window.open(whatsappUrl, '_blank');
+  const handleCheckout = () => {
+    // Proceed to checkout process
+    // You can add your checkout logic here
+    console.log('Proceeding to checkout with items:', items);
   };
 
   const handleClearCart = () => {
@@ -88,11 +88,10 @@ export const CartSidebar = ({ open, onClose }: CartSidebarProps) => {
                   <span>Rs. {total}</span>
                 </div>
                 <Button
-                  onClick={handleWhatsAppCheckout}
+                  onClick={handleCheckout}
                   className="w-full btn-primary h-12 text-base font-semibold"
                 >
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Buy Now via WhatsApp
+                  Buy Now
                 </Button>
                 <Button
                   onClick={handleClearCart}
