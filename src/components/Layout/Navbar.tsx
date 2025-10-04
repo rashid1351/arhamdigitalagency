@@ -34,7 +34,7 @@ const Navbar = () => {
               <img 
                 src={arhamLogo} 
                 alt="ARHAM Digital Agency Logo" 
-                className="h-12 w-12 object-contain transition-transform duration-300 group-hover:scale-110"
+                className="h-12 w-12 rounded-full object-cover border-2 border-primary/30 transition-all duration-300 group-hover:scale-110 group-hover:border-primary"
               />
               <h1 className="text-lg md:text-xl font-bold hero-glow hidden sm:block">
                 ARHAM DIGITAL AGENCY

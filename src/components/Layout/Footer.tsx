@@ -28,7 +28,7 @@ const Footer = () => {
               <img 
                 src={arhamLogo} 
                 alt="ARHAM Digital Agency Logo" 
-                className="h-16 w-16 object-contain"
+                className="h-16 w-16 rounded-full object-cover border-2 border-primary/30"
               />
               <h3 className="text-lg font-bold hero-glow">
                 ARHAM DIGITAL AGENCY
