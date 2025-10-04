@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin, MessageCircle } from "lucide-react";
+import arhamLogo from "@/assets/arham-logo.jpg";
 
 const Footer = () => {
   const quickLinks = [
@@ -23,9 +24,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-lg font-bold hero-glow mb-4">
-              ARHAM DIGITAL AGENCY
-            </h3>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src={arhamLogo} 
+                alt="ARHAM Digital Agency Logo" 
+                className="h-16 w-16 object-contain"
+              />
+              <h3 className="text-lg font-bold hero-glow">
+                ARHAM DIGITAL AGENCY
+              </h3>
+            </div>
             <p className="text-muted-foreground mb-4">
               Your trusted partner for premium digital tools & services.
             </p>

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { CartSidebar } from "@/components/Cart/CartSidebar";
 import { useCart } from "@/hooks/useCart";
+import arhamLogo from "@/assets/arham-logo.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,8 +30,13 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto container-padding">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link to="/" className="flex-shrink-0">
-              <h1 className="text-xl font-bold hero-glow">
+            <Link to="/" className="flex-shrink-0 flex items-center space-x-3 group">
+              <img 
+                src={arhamLogo} 
+                alt="ARHAM Digital Agency Logo" 
+                className="h-12 w-12 object-contain transition-transform duration-300 group-hover:scale-110"
+              />
+              <h1 className="text-lg md:text-xl font-bold hero-glow hidden sm:block">
                 ARHAM DIGITAL AGENCY
               </h1>
             </Link>
