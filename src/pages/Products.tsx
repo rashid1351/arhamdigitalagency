@@ -70,7 +70,7 @@ const Products = () => {
     {
       id: "prime-video",
       name: "Prime Video (1 Month)",
-      price: 500,
+      price: 200,
       image: primeVideoLogo,
       description: "Amazon Prime Video streaming with exclusive shows and movies",
       category: "streaming"
@@ -85,8 +85,8 @@ const Products = () => {
     },
     {
       id: "veo3",
-      name: "Veo 3 (1 Month)",
-      price: 700,
+      name: "Google Veo 3 (1 Month)",
+      price: 1500,
       image: veo3Logo,
       description: "Advanced AI video generation and editing capabilities",
       category: "digital-tools"
