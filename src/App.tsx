@@ -8,6 +8,7 @@ import Navbar from "@/components/Layout/Navbar";
 import Footer from "@/components/Layout/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import Home from "./pages/Home";
+import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Products from "./pages/Products";
 import Tools from "./pages/Tools";
@@ -30,6 +31,7 @@ const App = () => (
             <main className="flex-1">
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/tools" element={<Tools />} />
