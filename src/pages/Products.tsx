@@ -162,6 +162,7 @@ const Products = () => {
                         src={product.image}
                         alt={product.name}
                         className="w-20 h-20 object-contain"
+                        loading={index < 3 ? "eager" : "lazy"}
                       />
                     </div>
                     <h3 className="text-xl font-semibold mb-3 text-center">{product.name}</h3>
@@ -209,6 +210,7 @@ const Products = () => {
                         src={product.image}
                         alt={product.name}
                         className="w-20 h-20 object-contain"
+                        loading={index < 2 ? "eager" : "lazy"}
                       />
                     </div>
                     <h3 className="text-xl font-semibold mb-3 text-center">{product.name}</h3>
@@ -252,6 +254,7 @@ const Products = () => {
                         src={product.image}
                         alt={product.name}
                         className="w-20 h-20 object-contain"
+                        loading="lazy"
                       />
                     </div>
                     <h3 className="text-xl font-semibold mb-3 text-center">{product.name}</h3>
@@ -300,6 +303,7 @@ const Products = () => {
                         src={product.image}
                         alt={product.name}
                         className="w-20 h-20 object-contain"
+                        loading="lazy"
                       />
                     </div>
                     <h3 className="text-xl font-semibold mb-3 text-center">{product.name}</h3>

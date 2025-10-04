@@ -78,23 +78,24 @@ export const CartSidebar = ({ open, onClose }: CartSidebarProps) => {
                 ))}
               </div>
               
-              <div className="border-t pt-4 space-y-3">
-                <div className="flex justify-between items-center text-lg font-semibold">
+              <div className="border-t pt-4 mt-4 space-y-3 pb-4">
+                <div className="flex justify-between items-center text-lg font-semibold mb-4">
                   <span>Total:</span>
                   <span>Rs. {total}</span>
                 </div>
                 <Button
                   onClick={handleWhatsAppCheckout}
-                  className="w-full btn-primary"
+                  className="w-full btn-primary h-12 text-base"
                 >
-                  <MessageCircle className="w-4 h-4 mr-2" />
+                  <MessageCircle className="w-5 h-5 mr-2" />
                   Buy Now via WhatsApp
                 </Button>
                 <Button
                   onClick={handleClearCart}
                   variant="outline"
-                  className="w-full"
+                  className="w-full h-11 text-base border-2 hover:bg-destructive/10 hover:border-destructive hover:text-destructive"
                 >
+                  <Trash2 className="w-4 h-4 mr-2" />
                   Clear Cart
                 </Button>
               </div>

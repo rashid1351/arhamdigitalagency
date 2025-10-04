@@ -119,6 +119,7 @@ const Home = () => {
                       src={product.image}
                       alt={product.name}
                       className="w-16 h-16 object-contain"
+                      loading={index < 4 ? "eager" : "lazy"}
                     />
                   </div>
                   <h3 className="font-semibold mb-2 text-center">{product.name}</h3>

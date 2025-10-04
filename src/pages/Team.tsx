@@ -77,6 +77,7 @@ const Team = () => {
                         src={member.image}
                         alt={member.name}
                         className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-primary/20"
+                        loading="eager"
                       />
                     </div>
                     
@@ -174,6 +175,7 @@ const Team = () => {
                 src={rashidImage}
                 alt="Rashid Azam"
                 className="w-24 h-24 rounded-full mx-auto mb-6 object-cover border-4 border-primary/20"
+                loading="eager"
               />
               <blockquote className="text-lg text-muted-foreground italic mb-6 leading-relaxed">
                 "At ARHAM DIGITAL AGENCY, we believe that access to premium digital tools 

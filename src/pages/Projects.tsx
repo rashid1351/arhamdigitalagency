@@ -140,6 +140,7 @@ const Projects = () => {
                   src={project.image}
                   alt={`${project.title} - ${project.category} mockup design`}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  loading={index < 4 ? "eager" : "lazy"}
                 />
               </div>
               <CardContent className="p-4">
@@ -169,6 +170,7 @@ const Projects = () => {
                     src={selectedProject.image}
                     alt={`${selectedProject.title} - ${selectedProject.category} mockup design`}
                     className="w-full h-full object-cover"
+                    loading="eager"
                   />
                 </div>
 
