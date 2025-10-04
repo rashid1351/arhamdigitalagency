@@ -12,9 +12,10 @@ export const CartSidebar = ({ open, onClose }: CartSidebarProps) => {
   const { items, total, updateQuantity, removeItem, clearCart, generateWhatsAppMessage } = useCart();
 
   const handleCheckout = () => {
-    // Proceed to checkout process
-    // You can add your checkout logic here
-    console.log('Proceeding to checkout with items:', items);
+    const message = generateWhatsAppMessage();
+    const phoneNumber = "923476931351";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   const handleClearCart = () => {
